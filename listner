@@ -1,0 +1,12 @@
+  function(dialog){
+						  var title=dialog.getField('./text').getValue();
+						  if(title==="") {
+							  CQ.Notification.notify(CQ.I18n.getMessage("Validation Error"),
+                              CQ.I18n.getMessage("Ttile field must be filled "));
+							  						  return false;}
+
+						  else {
+							  return true;
+						  }
+						  
+						  }
